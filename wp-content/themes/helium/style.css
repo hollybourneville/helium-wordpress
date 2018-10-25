@@ -1,0 +1,26 @@
+/*
+Theme Name: Helium
+Theme URI: http://wordpress.org/themes/helium
+Author: Yoobee Auckland Web UX 02-18
+Author URI: http://wordpress.org/
+Description: we try themes out
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+    /*<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory');?>/style.css">*/
+/*if you use this css sheet make sure to link it on your header .php - see header link above*/
+
+.content-white p {
+	color:white;
+}
+
+.details{
+	/*border:1px red solid;*/
+	left:22%;
+}
