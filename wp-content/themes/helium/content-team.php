@@ -2,7 +2,7 @@
             <!-- Team Item Starts -->
             <div class="team-item">
               <figure class="team-profile">
-                <img src="<?php the_field('imageservice'); ?>" alt="">
+                <img src="<?php the_field('image'); ?>" alt="">
                 <figcaption class="our-team">
                   <div class="details">
                     <div class="content-white"><?php the_content(); ?></div>
@@ -17,7 +17,8 @@
               </figure>
               <div class="info">
                 <h2>
-                  <?php the_field('name'); ?>
+                  <a href="<?php the_permalink(); ?>"><?php the_field('name'); ?></a>
+                  
                 </h2>
                 <p>
                   <?php the_field('job_title'); ?>

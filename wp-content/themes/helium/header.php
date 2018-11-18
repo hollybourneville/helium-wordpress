@@ -23,6 +23,7 @@
 
   <!-- Fonts icons -->
   <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory');?>/css/font-awesome.min.css">
+
   <?php wp_head(); ?>
 </head>
 
@@ -33,7 +34,7 @@
     <!-- Nav -->
     <nav class="navbar navbar-toggleable-sm navbar-light bg-black">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="img/logo-2.png" alt=""></a>
+        <a class="navbar-brand" href="index.html"><img src="<?php echo get_theme_mod('logo_setting', get_bloginfo('template_directory').'/img/logo-2.png')?>"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar4" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
         </button>
@@ -62,12 +63,14 @@
             </li>
         
           </ul> -->
-          <form class="form-inline hidden-sm-down">
+          <!-- see below if you style your own form you need to add the action below and name = s in your input otherwise you can usephp get search from - commented out below-->
+          <form class="form-inline hidden-sm-down" action="<?php echo home_url('/') ?>">
             <div class="top_search_con">
-              <input class="form-control mr-sm-2" placeholder="Search Here ..." type="text">
+              <input class="form-control mr-sm-2" placeholder="Search Here ..." type="text" name="s">
               <span class="top_search_icon"><i class="fa fa-search"></i></span>
             </div>
           </form>
+          <?php //get_search_form(); ?>
         </div>
       </div>
     </nav>
